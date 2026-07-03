@@ -59,7 +59,10 @@ export default function Timeline() {
 
   return (
     <section className="relative py-32 bg-rdr-black overflow-hidden" ref={containerRef}>
-      <div className="absolute inset-0 opacity-5 bg-[url('/characters-images/full_gang.jpg')] bg-cover bg-fixed bg-center pointer-events-none grayscale"></div>
+      <div 
+        className="absolute inset-0 opacity-5 bg-cover bg-fixed bg-center pointer-events-none grayscale"
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}characters-images/full_gang.jpg)` }}
+      ></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-5xl md:text-7xl font-western text-center text-rdr-parchment mb-24 text-glow">

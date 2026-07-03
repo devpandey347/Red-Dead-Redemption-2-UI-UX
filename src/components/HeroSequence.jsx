@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const FRAME_COUNT = 300;
 const currentFrame = index => (
-  `/ezgif-new-jpg/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`
+  `${import.meta.env.BASE_URL}ezgif-new-jpg/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`
 );
 
 export default function HeroSequence() {

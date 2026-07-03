@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { X } from 'lucide-react';
 
 const galleryImages = [
-  { id: 1, src: '/characters-images/full_gang.jpg', alt: 'The Van der Linde Gang' },
-  { id: 2, src: '/characters-images/aurthor_morgan.jpg', alt: 'Arthur Morgan Portrait' },
-  { id: 3, src: '/characters-images/dutch.jpg', alt: 'Dutch van der Linde' },
-  { id: 4, src: '/characters-images/saddie_adler.jpg', alt: 'Sadie Adler' },
-  { id: 5, src: '/characters-images/john_marston.jpg', alt: 'John Marston' },
-  { id: 6, src: '/characters-images/micah_bell.jpg', alt: 'Micah Bell' },
+  { id: 1, src: `${import.meta.env.BASE_URL}characters-images/full_gang.jpg`, alt: 'The Van der Linde Gang' },
+  { id: 2, src: `${import.meta.env.BASE_URL}characters-images/aurthor_morgan.jpg`, alt: 'Arthur Morgan Portrait' },
+  { id: 3, src: `${import.meta.env.BASE_URL}characters-images/dutch.jpg`, alt: 'Dutch van der Linde' },
+  { id: 4, src: `${import.meta.env.BASE_URL}characters-images/saddie_adler.jpg`, alt: 'Sadie Adler' },
+  { id: 5, src: `${import.meta.env.BASE_URL}characters-images/john_marston.jpg`, alt: 'John Marston' },
+  { id: 6, src: `${import.meta.env.BASE_URL}characters-images/micah_bell.jpg`, alt: 'Micah Bell' },
 ];
 
 export default function Gallery() {

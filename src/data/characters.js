@@ -11,7 +11,7 @@ export const characters = [
       'Keeps a detailed journal of his travels',
       'An exceptional marksman and brawler'
     ],
-    imagePath: '/characters-images/aurthor_morgan.jpg', // Using the provided typo filename
+    imagePath: import.meta.env.BASE_URL + 'characters-images/aurthor_morgan.jpg', // Using the provided typo filename
     isFeatured: true,
   },
   {
@@ -26,7 +26,7 @@ export const characters = [
       'Despises the Pinkerton Detective Agency',
       'Prefers dual-wielding Schofield revolvers'
     ],
-    imagePath: '/characters-images/dutch.jpg',
+    imagePath: import.meta.env.BASE_URL + 'characters-images/dutch.jpg',
   },
   {
     id: 'john',
@@ -40,7 +40,7 @@ export const characters = [
       'Married to Abigail Roberts',
       'Iconic facial scars from a wolf attack'
     ],
-    imagePath: '/characters-images/john_marston.jpg',
+    imagePath: import.meta.env.BASE_URL + 'characters-images/john_marston.jpg',
   },
   {
     id: 'sadie',
@@ -54,7 +54,7 @@ export const characters = [
       'Harbors a burning hatred for the O\'Driscolls',
       'Takes charge when the gang leadership falters'
     ],
-    imagePath: '/characters-images/saddie_adler.jpg',
+    imagePath: import.meta.env.BASE_URL + 'characters-images/saddie_adler.jpg',
   },
   {
     id: 'charles',
@@ -68,7 +68,7 @@ export const characters = [
       'Prefers bows and throwing knives',
       'Often acts as the gang\'s conscience'
     ],
-    imagePath: '/characters-images/charles.jpg',
+    imagePath: import.meta.env.BASE_URL + 'characters-images/charles.jpg',
   },
   {
     id: 'javier',
@@ -82,7 +82,7 @@ export const characters = [
       'Fluent in Spanish and English',
       'Expert with throwing knives'
     ],
-    imagePath: '/characters-images/javier escuella.jpg', // Kept original filename
+    imagePath: import.meta.env.BASE_URL + 'characters-images/javier escuella.jpg', // Kept original filename
   },
   {
     id: 'micah',
@@ -96,6 +96,6 @@ export const characters = [
       'Always wears his iconic white hat and leather coat',
       'Will do absolutely anything to survive'
     ],
-    imagePath: '/characters-images/micah_bell.jpg',
+    imagePath: import.meta.env.BASE_URL + 'characters-images/micah_bell.jpg',
   }
 ];
