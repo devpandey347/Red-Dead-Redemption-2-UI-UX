@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Elite&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-rdr-black: #0b0b0b;
+  --color-rdr-red: #8B0000;
+  --color-rdr-crimson: #5C0000;
+  --color-rdr-parchment: #e3dac9;
+  
+  --font-western: "Cinzel", serif;
+  --font-body: "Playfair Display", serif;
+  --font-typewriter: "Special Elite", monospace;
+  --font-title: "Bebas Neue", sans-serif;
+  
+  --background-image-grain: url('data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');
+}
+
+@layer base {
+  body {
+    @apply bg-rdr-black text-rdr-parchment font-body overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-western uppercase tracking-wider;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(139, 0, 0, 0.7), 0 0 20px rgba(139, 0, 0, 0.5);
+  }
+  
+  .vignette {
+    box-shadow: inset 0 0 150px rgba(0,0,0,0.9);
+  }
+  
+  .film-grain {
+    position: relative;
+  }
+  .film-grain::after {
+    content: "";
+    @apply absolute inset-0 bg-grain opacity-[0.04] pointer-events-none mix-blend-overlay z-50;
+  }
+}
+
+/* Custom Scrollbar for a more cinematic feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5C0000;
+}
